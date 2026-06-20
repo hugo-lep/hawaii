@@ -21,23 +21,6 @@ protegR2_load_modules_servers <- function(sessions,
                                           input_main_app,
                                           main_session) {
 
-  # ── Routing bslibHL — style "sidebarHL" uniquement ────────────────────────
-  #
-  # page_sidebarHL_server() gère deux choses pour le layout sidebarHL :
-  #   1. Routing : clic dans la sidebar → affichage du bon panneau de contenu
-  #   2. Sync URL : chaque navigation met à jour ?page= dans l'URL du navigateur
-  #
-  # L'appel est conditionnel sur la présence de bslibHL — sans effet sur les
-  # projets qui n'utilisent pas ce layout (les observers input$hl__nav et
-  # input$hl__content ne se déclenchent jamais si page_sidebarHL() n'est pas
-  # dans le UI).
-  #
-  # Note : pour les autres styles (sidebar, navbar, fluid, fixed, fillable),
-  # la sync URL est gérée par l'observeEvent(input$nav_tab, ...) dans
-  # protegR2_server() — ne pas appeler page_sidebarHL_server() pour ces styles.
-  if (requireNamespace("bslibHL", quietly = TRUE)) {
-    bslibHL::page_sidebarHL_server(session = main_session)
-  }
 
   # ── Modules principaux ─────────────────────────────────────────────────────
 
