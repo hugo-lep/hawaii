@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+inst/dev/01_protegR2_start.R
+inst/app/data/config_s3_location.rds
+inst/app/data/config_s3_access.rds
+.httr-oauth
+.DS_Store
+.quarto
