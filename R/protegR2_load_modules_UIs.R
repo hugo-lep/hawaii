@@ -56,8 +56,9 @@ protegR2_load_modules_UIs <- function(session, tr) {
       title  = "Test — mod_itinerary_hawaii_m",
       theme  = bs_theme(bootswatch = "flatly"),
       # padding réduit pour simuler un écran étroit
-      shiny::div(style = "max-width: 430px; margin: 0 auto;",
-                 mod_itinerary_m_ui("hawaii_m")
+      shiny::div(mod_itinerary_ui("hawaii_m")
+#      shiny::div(style = "max-width: 430px; margin: 0 auto;",
+#                 mod_itinerary_ui("hawaii_m")
       )
     )
   )

@@ -25,7 +25,7 @@ protegR2_load_modules_servers <- function(sessions,
   # ── Modules principaux ─────────────────────────────────────────────────────
 
   voyage_data <- s3readRDS_HL("itinéraires/hawaii_2026.rds")
-  mod_itinerary_m_server("hawaii_m", voyage_data)
+  mod_itinerary_server("hawaii_m", voyage_data)
 
   # ── Module de configuration ────────────────────────────────────────────────
   # Reçoit sessions et main_session pour gérer les utilisateurs et les rôles.
