@@ -2350,7 +2350,7 @@
       "RemoteUsername": "hugo-lep",
       "RemoteRepo": "obsidianR",
       "RemoteRef": "master",
-      "RemoteSha": "5a6f03b3c849cd8a1b8b773dbfe3b75efe66dcd1",
+      "RemoteSha": "5bfb6fa6cd4086b2baa019229a9e04b9b1e8e6de",
       "Remotes": "hugo-lep/s3db"
     },
     "openssl": {
